@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"abui",
+  "usingComponents": {
+    "ab-easy-image": "../../widgets/ab-easy-image/ab-easy-image",
+    "ab-search-bar": "../../widgets/ab-search-bar/ab-search-bar"
+  }
+}

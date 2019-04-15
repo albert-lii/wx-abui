@@ -1,0 +1,4 @@
+<view class="ab-easy-image">
+ <image wx:if="{{!loadFinish && placeholder}}" class="ab-easy-image__pic" style="border-radius:{{radius}};" src="{{placeholder}}" mode="{{mode}}" />
+  <image class="ab-easy-image__pic" style="border-radius:{{radius}};" src="{{src}}" lazy-load="{{lazyload}}" mode="{{mode}}" bindload="_loadSuccess" binderror="_loadFail" />
+</view>
