@@ -9,7 +9,20 @@ Page({
     searchValue: '',
     imgPlaceholder: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg',
     imgError: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg',
-    imgUrl: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/4626/25.jpg'
+    imgUrl: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/4626/25.jpg',
+    banner: [{
+        title: '测试1',
+        imgUrl: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg'
+      },
+      {
+        title: '测试2',
+        imgUrl: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/4626/25.jpg'
+      },
+      {
+        title: '测试3',
+        imgUrl: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg'
+      }
+    ]
   },
 
   /**

@@ -5,7 +5,7 @@ Component({
       type: String,
       value: '请输入搜索内容',
     },
-    // 搜索框的内容
+    // 搜索框的初始内容
     value: {
       type: String,
       value: ''

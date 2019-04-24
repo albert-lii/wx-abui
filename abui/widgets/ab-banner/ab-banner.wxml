@@ -1,0 +1,10 @@
+<view class="banner">
+  <swiper class="banner-slider" indicator-dots="true" indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="rgba(255, 255, 255,.8)" autoplay="true" circular="true" interval="{{interval}}" duration="{{duration}}" bindchange="_bannerChanged">
+    <block wx:for="{{src}}" wx:for-index="{{index}}" wx:for-item="item" wx:key="{{index}}">
+      <swiper-item>
+        <ab-easy-image class="banner-item-image" placeholder="" src="{{item.imgUrl}}" data-item="{{item}}" mode="aspectFill" bindtap="_bannerItemTap" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <text class="banner-item-title">{{currenttitle}}</text>
+</view>

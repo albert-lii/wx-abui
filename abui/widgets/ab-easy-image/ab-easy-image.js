@@ -1,5 +1,4 @@
 Component({
-
   properties: {
     // 图片资源
     src: {
@@ -53,7 +52,7 @@ Component({
     _loadFail: function(e) {
       this.setData({
         loadFinish: true,
-        src: error
+        src: this.data.error
       });
       this.triggerEvent('fail', e);
     }

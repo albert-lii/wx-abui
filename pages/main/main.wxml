@@ -2,6 +2,8 @@
   <!-- 搜索框 -->
   <ab-search-bar placeholder="请输入关键字" value="{{searchValue}}" bindinput="searchInput" bindsearch="searchTab" bindclear="searchClear" />
 
+  <ab-banner class="banner" src="{{banner}}"/>
+
   <!-- 图片组件 -->
   <ab-easy-image class="circle-easy-image" src="{{imgUrl}}" placeholder="{{imgPlaceholder}}" radius="100%" bindsuccess="loadSuccess" bindfail="loadFail" />
   <ab-easy-image class="square-easy-image" src="{{imgUrl}}" placeholder="{{imgPlaceholder}}" mode="widthFix" />

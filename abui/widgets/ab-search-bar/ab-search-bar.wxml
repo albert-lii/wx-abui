@@ -2,13 +2,11 @@
   <view class="ab-search-bar__box">
     <icon class="ab-search-bar__icon" type="search" size="{{iconSize}}" />
     <view class="ab-search-bar__divider" />
-    <input class="ab-search-bar__input" type="text" placeholder="{{placeholder}}" value="{{value}}" bindinput="_searchInput" bindconfirm="_searchConfirm" />
+    <input class="ab-search-bar__input" type="text" placeholder="{{placeholder}}" value="{{value}}" bindinput="_searchInput" bindconfirm="_searchConfirm" confirm-type="search" />
     <view class="ab-search-bar__icon-clear" wx:if="{{value.length > 0}}" bindtap="_searchClear">
       <icon type="clear" size="{{iconSize}}" />
     </view>
   </view>
-  <view class="ab-search-bar__search-btn" bindtap="_searchConfirm">
-    <text wx:if="{{value.length > 0}}" data-key="search">搜索</text>
-    <text wx:else data-key="back">返回</text>
+  <view class="ab-search-bar__search-btn" bindtap="_searchConfirm" data-key="{{value.length > 0?'search':'back'}}">{{value.length > 0?'搜索':'返回'}}
   </view>
 </view>

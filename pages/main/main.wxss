@@ -1,3 +1,8 @@
+.banner {
+  width: 100%;
+  height: 362rpx;
+}
+
 .circle-easy-image, .square-easy-image {
   width: 200rpx;
   height: 200rpx;
@@ -10,7 +15,7 @@
   border: 2px solid gold;
 }
 
-.square-easy-image{
-   border: 2px solid green;
-   background-color: #ccc;
+.square-easy-image {
+  border: 2px solid green;
+  background-color: #fefefe;
 }
