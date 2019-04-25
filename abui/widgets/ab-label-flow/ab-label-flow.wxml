@@ -1,0 +1,5 @@
+<view class="label">
+  <view class="label-item" wx:for="{{src}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}" hover-class="label-item__hover" hover-stay-time="100" bindtap="_labelTap" data-index="{{index}}" data-item="{{item}}">
+    {{item.name}}
+  </view>
+</view>
