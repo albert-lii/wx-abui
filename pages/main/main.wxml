@@ -2,9 +2,11 @@
   <!-- 搜索框 -->
   <ab-search-bar placeholder="请输入关键字" value="{{searchValue}}" bindinput="searchInput" bindsearch="searchTab" bindclear="searchClear" />
 
-  <ab-banner class="banner" src="{{banner}}"/>
+  <ab-banner class="banner" src="{{bannerList}}" currenttitle="{{bannerTitle}}" bindchange="bannerChanged" binditemtap="bannerItemTap"/>
 
   <!-- 图片组件 -->
   <ab-easy-image class="circle-easy-image" src="{{imgUrl}}" placeholder="{{imgPlaceholder}}" radius="100%" bindsuccess="loadSuccess" bindfail="loadFail" />
   <ab-easy-image class="square-easy-image" src="{{imgUrl}}" placeholder="{{imgPlaceholder}}" mode="widthFix" />
+
+  <ab-label-flow style="margin-top:30rpx;background:yellow;" src="{{labels}}"/>
 </view>

@@ -11,29 +11,43 @@ Component({
       value: ''
     },
     // 页面切换间隔时间
-    interval:{
-      type:Number,
-      value:5000
+    interval: {
+      type: Number,
+      value: 5000
     },
     // 页面滑动动画时长
-    duration:{
+    duration: {
       type: Number,
       value: 500
-    }
+    }, 
+    // 图片未加载完成时的占位图
+    placeholder: {
+      type: String,
+      value: ''
+    },
+    // 图片加载失败时的占位图
+    error: {
+      type: String,
+      value: ''
+    },
   },
 
   methods: {
     /**
      * 页面切换监听
      */
-    _bannerChanged: function(e) {
-      this.triggerEvent('change', e);
+    _itemChanged: function(e) {
+      let _current = e.detail.current;
+      this.triggerEvent('change', {
+        current: _current
+      });
     },
     /**
      * banner item 点击事件
      */
-    _bannerItemTap: function(e) {
-      this.triggerEvent('itemtap', e);
+    _itemTap: function(e) {
+      let _currentTarget = e.currentTarget;
+      this.triggerEvent('itemtap', _currentTarget);
     }
   }
 })

@@ -3,6 +3,7 @@
   "usingComponents": {
     "ab-banner": "../../abui/widgets/ab-banner/ab-banner",
     "ab-easy-image": "../../abui/widgets/ab-easy-image/ab-easy-image",
+    "ab-label-flow": "../../abui/widgets/ab-label-flow/ab-label-flow",
     "ab-search-bar": "../../abui/widgets/ab-search-bar/ab-search-bar"
   }
 }

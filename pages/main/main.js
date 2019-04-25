@@ -1,16 +1,10 @@
-// pages/main/main.js
+const LABEL_SOURCE=require('../../utils/label_flow_source.js');
+
 Page({
 
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     searchValue: '',
-    imgPlaceholder: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg',
-    imgError: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg',
-    imgUrl: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/4626/25.jpg',
-    banner: [{
+    bannerList: [{
         title: '测试1',
         imgUrl: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg'
       },
@@ -22,14 +16,12 @@ Page({
         title: '测试3',
         imgUrl: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg'
       }
-    ]
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function(options) {
-
+    ],
+    bannerTitle: '测试1',
+    imgPlaceholder: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg',
+    imgError: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/469/picture4.jpg',
+    imgUrl: 'https://shenpan.oss-cn-shanghai.aliyuncs.com/4626/25.jpg',
+    labels: LABEL_SOURCE.labels
   },
 
   /*=========================================================
@@ -60,6 +52,29 @@ Page({
       console.log('searchTab >>> back');
       console.log(e.detail);
     }
+  },
+
+  /*=========================================================
+   * banner 组件相关
+   *=========================================================*/
+  /**
+   * banner 页面切换监听
+   */
+  bannerChanged: function(e) {
+    let _current = e.detail.current;
+    this.setData({
+      bannerTitle: this.data.bannerList[_current].title
+    });
+  },
+  /**
+   * banner item 点击监听
+   */
+  bannerItemTap: function(e) {
+    wx.showToast({
+      icon: 'none',
+      title: '点击了第' + e.detail.dataset.index + '个页面',
+      duration: 1000
+    })
   },
 
   /*=========================================================
