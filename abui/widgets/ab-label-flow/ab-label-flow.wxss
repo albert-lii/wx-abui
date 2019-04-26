@@ -4,6 +4,8 @@
   flex-wrap: wrap;
   justify-content: start;
   width: 100%;
+  padding-top: 18rpx;
+  padding-left: 20rpx;
 }
 
 .label-item {
@@ -12,7 +14,7 @@
   line-height: 51rpx;
   padding-left: 21rpx;
   padding-right: 21rpx;
-  margin-right: 27rpx;
+  margin-right: 20rpx;
   margin-bottom: 18rpx;
   font-size: 25rpx;
   color: #2e2e2e;

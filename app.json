@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/main/main"
+    "pages/waterfall/waterfall",
+    "pages/main/main",
+    "pages/mainex/mainex"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "深磐",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

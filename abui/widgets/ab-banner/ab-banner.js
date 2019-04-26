@@ -6,7 +6,7 @@ Component({
       value: null
     },
     // 当前页面的标题
-    currenttitle: {
+    currentTitle: {
       type: String,
       value: ''
     },
@@ -19,7 +19,7 @@ Component({
     duration: {
       type: Number,
       value: 500
-    }, 
+    },
     // 图片未加载完成时的占位图
     placeholder: {
       type: String,
@@ -46,6 +46,7 @@ Component({
      * banner item 点击事件
      */
     _itemTap: function(e) {
+      console.log(e)
       let _currentTarget = e.currentTarget;
       this.triggerEvent('itemtap', _currentTarget);
     }
