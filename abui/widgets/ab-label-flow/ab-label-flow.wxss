@@ -4,8 +4,6 @@
   flex-wrap: wrap;
   justify-content: start;
   width: 100%;
-  padding-top: 18rpx;
-  padding-left: 20rpx;
 }
 
 .label-item {

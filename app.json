@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/waterfall/waterfall",
     "pages/main/main",
+    "pages/waterfall/waterfall",
     "pages/mainex/mainex"
   ],
   "window": {
