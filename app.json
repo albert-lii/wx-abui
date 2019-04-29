@@ -5,9 +5,10 @@
     "pages/waterfall/waterfall"
   ],
   "window": {
-    "backgroundTextStyle": "dark",
+    "backgroundColor":"#ececec",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "深磐",
+    "navigationBarTitleText": "abui",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

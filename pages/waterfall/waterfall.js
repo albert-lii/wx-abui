@@ -18,6 +18,7 @@ Page({
       pageSrc: WATERFALL_SOURCE.source
     }, () => {
       wx.hideNavigationBarLoading();
+      wx.stopPullDownRefresh();
     });
   },
 

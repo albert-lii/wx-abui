@@ -1,5 +1,7 @@
 {
   "enablePullDownRefresh": true,
+  "backgroundColor": "#000",
+  "backgroundTextStyle": "dark",
   "usingComponents": {
     "ab-waterfall": "../../abui/widgets/ab-waterfall/ab-waterfall"
   }
