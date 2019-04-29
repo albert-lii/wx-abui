@@ -1,15 +1,4 @@
 <view class="container">
-  <!-- 搜索框 -->
-  <ab-search-bar placeholder="请输入关键字" value="{{searchValue}}" bindinput="searchInput" bindsearch="searchTab" bindclear="searchClear" />
-  <!-- 轮播图 -->
-  <ab-banner class="banner" src="{{bannerList}}" current-title="{{bannerTitle}}" bindchange="bannerChanged" binditemtap="bannerItemTap" />
-  <!-- 图片组件 -->
-  <ab-easy-image class="circle-easy-image" src="{{imgUrl}}" placeholder="{{imgPlaceholder}}" radius="100%" bindsuccess="loadSuccess" bindfail="loadFail" />
-  <ab-easy-image class="square-easy-image" src="{{imgUrl}}" placeholder="{{imgPlaceholder}}" mode="widthFix" />
-  <!-- 标签流 -->
-  <ab-label-flow class="label-flow" src="{{labels}}">
-    <view slot="after" class="label-item" hover-class="label-item__hover" hover-stay-time="100" bindtap="_labelTap" data-index="{{index}}" data-item="{{item}}">
-    {{item.name}}
-  </view>
-  </ab-label-flow>
+  <button id="mainex" class="button" bindtap="buttonTap">样式集中页</button>
+  <button id="waterfall" class="button" bindtap="buttonTap">无限加载瀑布流</button>
 </view>

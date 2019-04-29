@@ -1,48 +1,8 @@
-.banner {
-  width: 100%;
-  height: 362rpx;
-}
-
-.circle-easy-image, .square-easy-image {
-  width: 200rpx;
-  height: 200rpx;
-  margin-left: 275rpx;
+.button{
+  width: calc(100% - 100rpx);
+  height: 80rpx;
   margin-top: 30rpx;
-}
-
-.circle-easy-image {
-  border-radius: 100%;
-  border: 2px solid gold;
-}
-
-.square-easy-image {
-  border: 2px solid green;
-  background-color: #fefefe;
-}
-
-.label-flow {
-  margin-top: 30rpx;
-  background: tan;
-  padding-top: 18rpx;
-  padding-left: 20rpx;
-}
-
-.label-item {
-  position: relative;
-  height: 51rpx;
-  line-height: 51rpx;
-  padding-left: 21rpx;
-  padding-right: 21rpx;
-  margin-right: 20rpx;
-  margin-bottom: 18rpx;
-  font-size: 25rpx;
-  color: #2e2e2e;
-  text-align: center;
-  background-color: white;
-  border-radius: 4px;
-}
-
-.label-item__hover {
-  color: white;
-  background-color: #2e2e2e;
+  margin-left: 50rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
 }

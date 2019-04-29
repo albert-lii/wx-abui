@@ -4,5 +4,5 @@
       <ab-easy-image class="banner-item-image" src="{{item.imgUrl}}" placeholder="{{placeholder}}" error="{{error}}" mode="aspectFill" />
     </swiper-item>
   </swiper>
-  <text class="banner-item-title">{{currentTitle}}</text>
+  <text class="banner-item-title" wx:if="{{currentTitle}}">{{currentTitle}}</text>
 </view>

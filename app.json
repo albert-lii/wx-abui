@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/main/main",
-    "pages/waterfall/waterfall",
-    "pages/mainex/mainex"
+    "pages/mainex/mainex",
+    "pages/waterfall/waterfall"
   ],
   "window": {
     "backgroundTextStyle": "dark",

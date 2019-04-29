@@ -1,11 +1,5 @@
 <view class="label">
-  <block wx:for="{{src}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}" bindtap="_labelTap">
-    <slot name="after"/>
-    <!-- <view class="label-item" hover-class="label-item__hover" hover-stay-time="100"  data-index="{{index}}" data-item="{{item}}"> -->
+  <view class="label-item" wx:for="{{src}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}" hover-class="label-item__hover" hover-stay-time="100" bindtap="_labelTap" data-index="{{index}}" data-item="{{item}}">
     {{item.name}}
-    <!-- </view> -->
-  </block>
-  <!-- <view class="label-item" wx:for="{{src}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}" hover-class="label-item__hover" hover-stay-time="100" bindtap="_labelTap" data-index="{{index}}" data-item="{{item}}">
-    {{item.name}}
-  </view> -->
+  </view>
 </view>
