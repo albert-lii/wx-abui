@@ -1,0 +1,38 @@
+.waterfall {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.waterfall-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.waterfall-column-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 14rpx;
+}
+
+.waterfall-column-item__image {
+  width: 100%;
+  font-size: 0;
+}
+
+.waterfall-column-item__bottom {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  font-size: 23rpx;
+  color: #2e2e2e;
+  background: white;
+  border-radius: 0 0 4px 4px;
+  padding: 8rpx 18rpx 8rpx 18rpx;
+  box-sizing: border-box;
+}

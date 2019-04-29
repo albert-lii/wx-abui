@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ab-easy-image": "../ab-easy-image/ab-easy-image"
+  }
+}

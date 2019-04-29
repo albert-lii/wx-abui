@@ -1,0 +1,6 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "ab-waterfall": "../../abui/widgets/ab-waterfall/ab-waterfall"
+  }
+}

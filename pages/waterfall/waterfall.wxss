@@ -1,0 +1,9 @@
+page {
+  background: #ececec;
+}
+
+.waterfall {
+  width: 100%;
+  padding:14rpx;
+  box-sizing: border-box;
+}
