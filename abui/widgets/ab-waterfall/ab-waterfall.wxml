@@ -1,7 +1,7 @@
 <view class="waterfall">
   <view class="waterfall-column" style="width:{{columnWidth}}rpx;margin-right:{{columnNo<(columnArr.length-1)?horizontalSpace:0}}rpx;" wx:for-index="columnNo" wx:for-item="pageArr" wx:for="{{columnArr}}" wx:key="{{columnNo}}">
     <block wx:for-index="pageNo" wx:for-item="dataArr" wx:for="{{pageArr}}" wx:key="{{pageNo}}">
-      <view class="waterfall-column-item" style="margin-bottom:{{itemNo<(dataArr.length-1)?verticalSpace:0}}rpx;" wx:for-index="itemNo" wx:for-item="item" wx:for="{{dataArr}}" wx:key="{{itemNo}}">
+      <view class="waterfall-column-item" wx:for-index="itemNo" wx:for-item="item" wx:for="{{dataArr}}" wx:key="{{itemNo}}">
         <ab-easy-image class="waterfall-column-item__image" style="height:{{item.imgH}}rpx;" src="{{item.imgUrl}}" mode="aspectFill" radius="4px 4px 0 0" placeholder="{{placehodler}}" error="{{error}}" />
         <view class="waterfall-column-item__bottom">{{item.title}}</view>
       </view>
