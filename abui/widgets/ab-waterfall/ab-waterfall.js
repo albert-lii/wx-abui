@@ -15,7 +15,7 @@ Component({
       type: Number,
       value: 14
     },
-    // 当前页（仅在启用了分页加载时有效）
+    // 当前页
     pageNo: {
       type: Number,
       value: 0
@@ -85,7 +85,6 @@ Component({
         let _systemInfo = wx.getSystemInfoSync();
         let _screenWidth = _systemInfo.windowWidth;
         let _containerWidth = rect[0].width / _screenWidth * 750;
-        console.log(rect)
         let _columnWidth = (_containerWidth - (_columnCount - 1) * _hspace) / _columnCount;
         _page.setData({
           columnWidth: _columnWidth
@@ -136,6 +135,12 @@ Component({
           ['columnArr[' + i + '][' + this.data.pageNo + ']']: _columnArr[i]
         });
       }
+    },
+    /**
+     * item 点击监听
+     */
+    _itemTap:function(e){
+      this.triggerEvent('itemtap',e.currentTarget);
     }
   },
 })

@@ -12,6 +12,15 @@ Page({
     });
   },
 
+  itemTap:function(e){
+    console.log(e)
+    wx.showToast({
+      icon:'none',
+      title:e.detail.dataset.item.title,
+      duration:1200
+    });
+  },
+
   onPullDownRefresh: function() {
     wx.showNavigationBarLoading();
     this.setData({

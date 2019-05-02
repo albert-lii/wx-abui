@@ -1,5 +1,5 @@
 <view class="container">
   <!-- <view class="waterfall-arr" wx:for=""> -->
-  <ab-waterfall class="waterfall" page-no="{{pageNo}}" page-src="{{pageSrc}}" column-count="2" />
+  <ab-waterfall class="waterfall" page-no="{{pageNo}}" page-src="{{pageSrc}}" column-count="3" binditemtap="itemTap" />
   <!-- </view> -->
 </view>
