@@ -4,7 +4,7 @@ wx-abui 是一款基于微信小程序自定义组件开发的简易组件库，
 ## 组件库
 - [轮播图 ab-banner](https://www.jianshu.com/p/6523749f0205)
 - [带占位图效果的图片组件 ab-easy-image](https://www.jianshu.com/p/483dbc8bae83)
-- 标签流 ab-label-flow
+- [标签流 ab-label-flow](https://www.jianshu.com/p/92d8ece2a6cd)
 - [搜索框 ab-search-bar](https://www.jianshu.com/p/413d55ee16ec)
 - [瀑布流 ab-waterfall](https://www.jianshu.com/p/8665580744b7)
 
